@@ -7,6 +7,7 @@ await connectToDatabase();
 
 // 📌 GET: Fetch all polls OR a single poll by ID
 export async function GET(req: Request) {
+    await connectToDatabase();
     try {
         const { searchParams } = new URL(req.url);
         const pollId = searchParams.get("id");
