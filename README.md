@@ -22,7 +22,7 @@ A simple polling app where users can:
 ### **1. Clone the Repository**
 
 ```sh
-git clone https://github.com/yourusername/polling-app.git
+git clone https://github.com/asdotdev/polling-app.git
 cd polling-app
 ```
 
@@ -37,8 +37,9 @@ npm install
 Create a `.env.local` file in the root directory and add:
 
 ```env
-MONGODB_URI=your-mongodb-connection-string
-NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api
+DB_CONN_STRING=your-mongodb-connection-string
+NEXT_PUBLIC_API_BASE_URL=https://your-vercel-project.vercel.app
+
 ```
 
 ### **4. Run the Development Server**
